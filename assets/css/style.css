@@ -29,7 +29,7 @@ body {
   display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
+  outline-color: transparent;
 }
 .btn-15 {
   background: #0563bb;
@@ -452,7 +452,7 @@ h6 {
   background: none;
   font-size: 28px;
   transition: all 0.4s;
-  outline: none !important;
+  outline-color: transparent !important;
   line-height: 0;
   cursor: pointer;
   border-radius: 50px;
