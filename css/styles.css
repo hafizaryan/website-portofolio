@@ -3428,6 +3428,12 @@ img.u-pull-left {
   width: 60%;
 }
 
+@media screen and (max-width: 1000px) {
+  .about-info__pic {
+    display: none;
+  }
+}
+
 .about-info__text {
   padding: var(--vspace-3_5) 10vw var(--vspace-2) 0;
   margin-left: -4rem;
@@ -3921,6 +3927,20 @@ img.u-pull-left {
   display: block;
 }
 
+@media screen and (max-width: 1000px) {
+  .gallery-slider__image {
+    width: 100%;
+    height: auto; /* Adjust height dynamically */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    display: block; /* Ensure only one image is displayed */
+  }
+
+  .gallery-slider {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .gallery .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
@@ -4032,12 +4052,12 @@ img.u-pull-left {
 
 @media screen and (max-width: 1000px) {
   .folio-list__item-title {
-    font-size: var(--text-lg);
-    line-height: var(--vspace-1);
+    font-size: var(--text-md);
+    line-height: var(--vspace-0_875);
   }
 
   .folio-list__item-cat {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
   }
 }
 
@@ -4050,8 +4070,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
   .folio-list__item-title {
-    font-size: var(--text-md);
-    line-height: var(--vspace-0_875);
+    font-size: var(--text-sm);
+    line-height: var(--vspace-0_75);
   }
 
   .folio-list__proj-link {
@@ -4061,7 +4081,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 500px) {
   .folio-list {
-    --item-min-height: var(--vspace-3_5);
+    --item-min-height: var(--vspace-3);
   }
 
   .folio-list__item {
@@ -4069,18 +4089,18 @@ img.u-pull-left {
   }
 
   .folio-list__item-link {
-    padding-left: calc(4.25 * var(--space));
+    padding-left: var(--space);
   }
 }
 
 @media screen and (max-width: 400px) {
   .folio-list .column {
     flex: none;
-    width: 50%;
+    width: 100%;
   }
 
   .folio-list__item {
-    margin-bottom: 0;
+    margin-bottom: var(--vspace-0_5);
   }
 
   .folio-list__item-link {
@@ -4099,11 +4119,11 @@ img.u-pull-left {
 
   .folio-list__item-text,
   .folio-list__proj-link {
-    display: none;
+    display: block;
   }
 
   .modal-popup__desc {
-    padding: 0 var(--vspace-1) var(--vspace-0_25);
+    padding: var(--vspace-1) var(--vspace-0_5);
   }
 }
 
