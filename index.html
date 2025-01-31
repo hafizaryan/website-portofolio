@@ -94,8 +94,8 @@
 
                         <h1 class="text-huge-title">
                             I am Hafiz Aryan, <br>
-                            a Full Stack Developer <br>
-                            & Software Tester
+                            Tech <br>
+                            Enthusiast
                         </h1>
                     </div>
 
@@ -595,7 +595,6 @@
                                     <img src="assets/gallery/gallery-29.jpg" alt="Gallery Image 4"
                                         class="gallery-slider__image">
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -691,13 +690,19 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var swiper = new Swiper(".testimonial-slider", {
-                loop: true,
                 autoplay: {
-                    delay: 2000, // 2 detik
+                    delay: 0, // Tidak ada delay sama sekali
                     disableOnInteraction: false,
                 },
-                slidesPerView: 2, // Default untuk desktop
+                speed: 4500, // Kecepatan lebih lambat untuk efek mengalir alami
+                slidesPerView: "auto", // Menyesuaikan jumlah slide yang terlihat
                 spaceBetween: 20, // Jarak antar gambar
+                freeMode: true, // Mode bebas agar scroll terasa alami
+                freeModeMomentum: false, // Menghindari berhenti mendadak
+                loop: true, // Tetap mengulang tanpa terasa ada gap
+                loopedSlides: 5, // Mencegah delay saat berpindah ke awal slide lagi
+                allowTouchMove: false, // Menghindari interaksi yang bisa menghentikan autoplay
+                cssMode: false, // Mencegah masalah rendering yang menyebabkan delay
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,

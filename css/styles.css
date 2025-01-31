@@ -3948,9 +3948,9 @@ img.u-pull-left {
   opacity: 0.4;
 }
 
-.gallery .swiper-container {
+/* .gallery .swiper-container {
   padding-bottom: var(--vspace-2_5);
-}
+} */
 
 .gallery
   .swiper-container-horizontal
