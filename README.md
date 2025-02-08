@@ -2,7 +2,7 @@
 
 ## Tentang Saya
 
-Saya adalah seorang mahasiswa tingkat akhir dengan pengalaman dalam Pengembangan Web dan Pengujian Perangkat Lunak. Saya memiliki keahlian dalam PHP Framework, JavaScript, SQL, dan Google Cloud. Saya sangat antusias dengan pengembangan web, jaminan kualitas, dan rekayasa cloud.
+Saya adalah seorang mahasiswa tingkat akhir dengan pengalaman dalam Pengembangan Web dan Pengujian Perangkat Lunak. Saya memiliki keahlian dalam PHP Framework, JavaScript, SQL, dan Google Cloud.
 
 ## Fitur Portfolio
 
