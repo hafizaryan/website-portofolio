@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: #141414;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 60%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 6rem;
+            font-size: 50px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 100px;
+        }
+
+        .link-item {
+            padding: 1.25rem;
+            text-decoration: none;
+            color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: var(--color-btn-primary);
+            border-color: var(--color-btn-primary);
+            color: var(--color-btn-primary-text);
+        }
+
+        .link-item:hover {
+            transform: scale(1.02);
+            background: var(--color-btn-primary-hover);
+            border-color: var(--color-btn-primary-hover);
+            color: var(--color-btn-primary-hover-text);
+        }
+
+        .link-text {
+            font-weight: 500;
+        }
+
+        .link-subtext {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+
+            .link-item {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <div class="container">
+
+        <div class="judul">
+            <h1>My Social Media Links</h1>
+        </div>
+
+        <div class="item">
+            <div class="links-container">
+                <a href="#" class="link-item">
+                    <span class="link-text">LinkedIn</span>
+                </a>
+                <a href="#" class="link-item">
+                    <span class="link-text">GitHub</span>
+                </a>
+                <a href="#" class="link-item">
+                    <span class="link-text">Facebook</span>
+                </a>
+                <a href="#" class="link-item">
+                    <span class="link-text">Instagram</span>
+                </a>
+                <a href="#" class="link-item">
+                    <span class="link-text">Dribbble</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
