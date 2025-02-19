@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.judul {
+  margin-top: 60px;
+}
+
+body {
+  background: #141414;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  margin-top: 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+h5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 50%;
+  text-align: justify;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.link-item {
+  padding: 1.25rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--color-btn-primary);
+  border-color: var(--color-btn-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.link-item .fa-brands {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.link-item .fa-solid {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+
+.link-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.link-item:hover {
+  color: var(--color-1);
+  outline: 0;
+  transform: scale(1.02);
+  background: var(--color-btn-primary-hover);
+  border-color: var(--color-btn-primary-hover);
+  color: var(--color-btn-primary-hover-text);
+  transition: transform 0.4s ease-in-out, background 0.4s ease-in-out,
+    border-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.link-item::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.link-text {
+  font-weight: 500;
+  font-family: var(--font-1);
+  text-rendering: optimizeLegibility;
+  opacity: 1;
+}
+
+.link-subtext {
+  color: #666;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h5 {
+    width: 80%;
+  }
+
+  h1 {
+    width: 80%;
+    font-size: 3rem;
+  }
+
+  .links-container {
+    width: 90%;
+    max-width: 95%;
+  }
+
+  .link-item {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .links-container {
+    width: 90%;
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+}
