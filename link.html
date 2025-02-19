@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hafiz Aryan Siregar</title>
+    <meta name="description"
+        content="Portfolio of Hafiz Aryan Siregar, a tech enthusiast with experience in web development, software testing, and cloud computing.">
+    <meta name="author" content="Hafiz Aryan Siregar">
+    <meta name="keywords" content="Hafiz Aryan Siregar, portfolio, web development, cloud computing, software testing">
+    <meta property="og:title" content="Hafiz Aryan Siregar">
+    <meta property="og:description"
+        content="Explore the portfolio of Hafiz Aryan Siregar, showcasing projects in web development, cloud computing, and software testing.">
+    <meta property="og:url" content="https://hafizaryan.netlify.app">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="favicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="favicon.jpg">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .judul {
+            margin-top: 60px;
+        }
+
+        body {
+            background: #141414;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: auto;
+            margin-bottom: 40px;
+            width: 50%;
+        }
+
+        h5 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: auto;
+            margin-bottom: 50px;
+            width: 50%;
+            text-align: justify;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: auto;
+            width: 50%;
+            margin-bottom: 100px;
+        }
+
+        .link-item {
+            padding: 1.25rem;
+            text-decoration: none;
+            color: #1a1a1a;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: var(--color-btn-primary);
+            border-color: var(--color-btn-primary);
+            color: var(--color-btn-primary-text);
+        }
+
+        .link-item .fa-brands {
+            flex: 0 0 auto;
+            margin-right: 10px;
+        }
+
+        .link-item .fa-solid {
+            flex: 0 0 auto;
+            margin-left: 10px;
+        }
+
+        .link-text {
+            flex: 1;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+
+        .link-item:hover {
+            color: var(--color-1);
+            outline: 0;
+            transform: scale(1.02);
+            background: var(--color-btn-primary-hover);
+            border-color: var(--color-btn-primary-hover);
+            color: var(--color-btn-primary-hover-text);
+            transition: transform 0.4s ease-in-out, background 0.4s ease-in-out, border-color 0.4s ease-in-out, color 0.4s ease-in-out;
+        }
+
+        .link-item::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .link-text {
+            font-weight: 500;
+            font-family: var(--font-1);
+            text-rendering: optimizeLegibility;
+            opacity: 1;
+
+        }
+
+        .link-subtext {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h5 {
+                width: 80%;
+            }
+
+            h1 {
+                width: 80%;
+                font-size: 3rem;
+            }
+
+            .links-container {
+                width: 90%;
+                max-width: 95%;
+            }
+
+            .link-item {
+                padding: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .links-container {
+                width: 90%;
+                max-width: 90%;
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <div class="container">
+        <div class="s-pagewrap">
+
+            <div class="judul">
+                <h1>Hafiz Aryan Siregar</h1>
+            </div>
+
+            <div class="circles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container">
+                <h5>Hey everyone! This is my social media account—feel free to explore, follow, and connect!</h5>
+                <div class="link">
+                    <div class="links-container">
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa fa-file-alt"></i>
+                            <span class="link-text">Curriculum Vitae</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="link-text">Portfolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="link-text">LinkedIn</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="link-text">GitHub</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="link-text">Instagram</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span class="link-text">Facebook</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-dribbble"></i>
+                            <span class="link-text">Dribbble</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa-brands fa-dev"></i>
+                            <span class="link-text">Community Dev</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa fa-link"></i>
+                            <span class="link-text">Credly</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" target="_blank" class="link-item">
+                            <i class="fa fa-link"></i>
+
+                            <span class="link-text">GCSB Profile</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.dicoding.com/users/hafizaryan/academies" target="_blank" class="link-item">
+                            <i class="fa fa-link"></i>
+
+                            <span class="link-text">Dicoding</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://g.dev/hafizaryan" target="_blank" class="link-item">
+                            <i class="fa fa-link"></i>
+                            <span class="link-text">Google Developer</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -3214,7 +3214,6 @@ img.u-pull-left {
   min-height: calc(25.5 * var(--space));
   justify-content: center;
   align-items: center;
-  /* padding-top     : calc(16vh + var(--header-height)); */
   padding-bottom: var(--vspace-3);
 }
 
@@ -3489,6 +3488,10 @@ img.u-pull-left {
   position: relative;
 }
 
+.timeline__desc {
+  text-align: justify;
+}
+
 .timeline::before {
   content: "";
   display: block;
@@ -3760,6 +3763,7 @@ img.u-pull-left {
   line-height: var(--vspace-0_75);
   margin-left: 0.2rem;
   margin-top: 15px;
+  text-align: justify;
 }
 
 .folio-list__item-tech {
