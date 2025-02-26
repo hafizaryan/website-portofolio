@@ -2,9 +2,6 @@
 <html class="no-js ss-preload" lang="en">
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
     <title>Hafiz Aryan Siregar</title>
     <meta name="description"
@@ -15,18 +12,10 @@
     <meta property="og:description"
         content="Explore the portfolio of Hafiz Aryan Siregar, showcasing projects in web development, cloud computing, and software testing.">
     <meta property="og:url" content="https://hafizaryan.netlify.app">
-
-    <!-- mobile specific metas
-    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- favicons
-    ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.jpg">
     <link rel="icon" type="image/jpg" sizes="32x32" href="favicon.jpg">
     <link rel="icon" type="image/jpg" sizes="16x16" href="favicon.jpg">
@@ -38,20 +27,11 @@
 </head>
 
 <body id="top">
-
-
-    <!-- # preloader
-    ================================================== -->
     <div id="preloader">
         <div id="loader">
         </div>
     </div>
-
-
-    <!-- # page wrap
-    ================================================== -->
     <div class="s-pagewrap">
-
         <div class="circles">
             <span></span>
             <span></span>
@@ -59,81 +39,83 @@
             <span></span>
             <span></span>
         </div>
-
-
-        <!-- ## site header 
-        ================================================== -->
         <header class="s-header">
-
             <div class="header-mobile">
                 <span class="mobile-home-link"><a href="#">Hafiz</a></span>
                 <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
             </div>
-
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
                         <li><a href="#" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#certificates" class="smoothscroll">Certificates</a></li>
+                        <li><a href="#works" class="smoothscroll">Work</a></li>
+                        <li><a href="#certificates" class="smoothscroll">Certificate</a></li>
                         <li><a href="#gallery" class="smoothscroll">Gallery</a></li>
-                        <li><a href="#contact" class="smoothscroll">Contact Me</a></li>
-                        <li><a href="link.html" target="_blank" class="smoothscroll">Social Link</a></li>
+                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                        <li><a href="link.html" target="_blank" class="smoothscroll social-link-animation">Social
+                                Link</a></li>
                     </ul>
                 </nav>
             </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
+        </header>
         <main class="s-content">
-
-
-            <!-- ### intro
-            ================================================== -->
             <section id="intro" class="s-intro target-section">
-
                 <div class="row intro-content wide">
-
                     <div class="column">
                         <div class="text-pretitle with-line">
                             Hello,
                         </div>
-
                         <h1 class="text-huge-title">
-                            I am Hafiz Aryan, <br>
-                            Tech <br>
-                            Enthusiast
+                            I am Hafiz Aryan Siregar, <br>
+                            <span id="typing"></span>
                         </h1>
-                    </div>
+                        <script>
+                            const roles = ["Tech Enthusiast", "Full Stack Developer", "Software Quality Assurance", "Cloud Engineer"];
+                            let roleIndex = 0;
+                            let charIndex = 0;
+                            const typingSpeed = 100; // Kecepatan mengetik (ms)
+                            const eraseSpeed = 5;   // Kecepatan menghapus (ms)
+                            const pauseBeforeErase = 2000; // Jeda sebelum menghapus (ms)
+                            const pauseBeforeType = 500;  // Jeda sebelum mengetik (ms)
 
-                    <!-- <ul class="intro-social">
-                        <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">Socmed</a></li>
+                            function typeWriter() {
+                                if (charIndex < roles[roleIndex].length) {
+                                    document.getElementById("typing").textContent += roles[roleIndex].charAt(charIndex);
+                                    charIndex++;
+                                    setTimeout(typeWriter, typingSpeed);
+                                } else {
+                                    setTimeout(eraseText, pauseBeforeErase);
+                                }
+                            }
+
+                            function eraseText() {
+                                if (charIndex > 0) {
+                                    document.getElementById("typing").textContent = roles[roleIndex].substring(0, charIndex - 1);
+                                    charIndex--;
+                                    setTimeout(eraseText, eraseSpeed);
+                                } else {
+                                    roleIndex = (roleIndex + 1) % roles.length;
+                                    setTimeout(typeWriter, pauseBeforeType);
+                                }
+                            }
+                            typeWriter();
+                        </script>
+                    </div>
+                    <ul class="intro-social">
+                        <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">LinkedIn</a></li>
                         <li><a href="https://github.com/hafizaryan" target="_blank">Github</a></li>
                         <li><a href="https://www.instagram.com/hafizaryan_/" target="_blank">Instagram</a></li>
-                    </ul> -->
-
-                </div> <!-- end intro content -->
-
+                    </ul>
+                </div>
             </section>
-
-
-            <!-- ### about
-            ================================================== -->
             <section id="about" class="s-about target-section" active>
-
-
                 <div class="row about-info wide" data-animate-block>
-
                     <div class="column lg-6 md-12 about-info__pic-block">
                         <img src="images/about-photo.jpg" alt="" class="about-info__pic" data-animate-el>
                     </div>
                     <div class="column lg-6 md-12">
                         <div class="about-info__text">
-
                             <h2 class="text-pretitle with-line" data-animate-el>
                                 About
                             </h2>
@@ -144,38 +126,26 @@
                             </p>
                             <a href="assets/Hafiz Aryan Siregar - Resume.pdf" target="_blank"
                                 class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
-
                         </div>
                     </div>
-                </div> <!-- about-info -->
-
-
+                </div>
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
-
                         <h2 class="text-pretitle" data-animate-el>Interest</h2>
-
                         <ul class="skills-list h1" data-animate-el>
                             <li>Web Development</li>
                             <li>Cloud Computing</li>
                             <li>Software Tester</li>
                             <li>Data Science</li>
                         </ul>
-
                     </div>
-                </div> <!-- end about-expertise -->
-
-
+                </div>
                 <div class="row about-timelines" data-animate-block>
-
                     <div class="column lg-6 tab-12">
-
                         <h2 class="text-pretitle" data-animate-el>
                             Experience
                         </h2>
-
                         <div class="timeline" data-animate-el>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -184,14 +154,10 @@
                                         <p class="timeline__timeframe">Jan 2025 - Present</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Coding Camp powered by DBS Foundation Road to Future Workforce. This information
-                                        technology training program is designed with high standards to prepare graduates
-                                        with skills that are ready to be applied in the workforce. This program is the
-                                        result of a collaboration between DBS Foundation and Dicoding, which has been
-                                        held since 2022.</p>
+                                    <p>A high-standard IT training program by DBS Foundation and Dicoding to prepare
+                                        graduates with workforce-ready skills since 2022.</p>
                                 </div>
                             </div>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -200,23 +166,19 @@
                                         <p class="timeline__timeframe">Sep 2024 - Jan 2025</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Bangkit is a career preparation program that aims to produce high-caliber digital
-                                        talent for world-class Indonesian technology companies and startups which is
-                                        fully supported by Google, GoTo, Traveloka and the Indonesian Ministry of
-                                        Education and Culture.</p>
+                                    <p>Bangkit is a career prep program to develop top digital talent, fully supported
+                                        by Google, GoTo, Traveloka, and Indonesia's Ministry of Education.</p>
                                     <ul>
-                                        <li>Completed a comprehensive curriculum covering beginner to advanced levels,
-                                            focusing on key topics like Google Cloud Engineer, DevOps Engineer, SRE
-                                            Learning Path, Google Cloud Computing Foundations, Applied Machine Learning
-                                            for Cloud Engineer, Build API with Javascript. Learn about soft skills such
-                                            as growth mindset, time management, critical thinking, adaptability and
-                                            resilence, project management, professional communication, and professional
-                                            branding.</li>
-                                        <li>Led and managed a capstone team to successfully complete the project.</li>
+                                        <li>Completed a full curriculum from beginner to advanced levels in Google
+                                            Cloud, DevOps, SRE, and APIs, while enhancing soft skills like growth
+                                            mindset, critical thinking, adaptability, and professional communication.
+                                        </li>
+                                        <li>Led and managed a capstone team called DAISY</li>
+                                        <li>Up to 5 Best Presenters in English ILT Activity Class</li>
+                                        <li>Best Presenter in Peer Review Session</li>
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -240,9 +202,7 @@
                         <h2 class="text-pretitle" data-animate-el>
                             Education
                         </h2>
-
                         <div class="timeline" data-animate-el>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -261,7 +221,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -277,17 +236,12 @@
                                     </ul>
                                 </div>
                             </div>
-
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
+                        </div>
+                    </div>
                     <div class="column lg-4 tab-12">
-
                         <h2 class="text-pretitle" data-animate-el>
                             Organization
                         </h2>
-
                         <div class="timeline" data-animate-el>
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
@@ -297,10 +251,8 @@
                                     <p class="timeline__timeframe">Oct 2023 - Oct 2024</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>Google Developer Student Club (GDSC) is a student community focused on developing
-                                        Google technology skills and a platform for students to learn, collaborate and
-                                        develop innovative projects.
-                                    </p>
+                                    <p>GDSC is a student community for learning and developing Google technologies
+                                        through innovative projects.</p>
                                     <ul>
                                         <li>Developed and coordinated a comprehensive learning curriculum and schedule
                                             throughout the program.</li>
@@ -311,7 +263,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -339,25 +290,18 @@
                                     <p class="timeline__timeframe">Feb 2023 - Jan 2024</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    The Information System Networking Club (ISNC) is a Study Club or Research Team under
-                                    the Information Systems Study Program of the Faculty of Science and Technology at
-                                    Sultan Syarif Kasim State Islamic University Riau (UIN Suska Riau). It was
-                                    established in 2017 based on an idea from a faculty member and several students of
-                                    the Information Systems Study Program at UIN Suska Riau. The activities conducted by
-                                    this Study Club or Research Team are related to education and teaching processes,
-                                    community service, and research in particular.
+                                    ISNC is a research-focused study club under UIN Suska Riau's Information Systems
+                                    program, established in 2017 to conduct educational, community service, and research
+                                    activities.
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="column lg-4 tab-12">
-
                         <h2 class="text-pretitle" data-animate-el>
                             Committee
                         </h2>
-
                         <div class="timeline" data-animate-el>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -379,7 +323,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -420,18 +363,32 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="column lg-4 tab-12">
-
                         <h2 class="text-pretitle" data-animate-el>
                             Volunteer
                         </h2>
-
                         <div class="timeline" data-animate-el>
-
-
-
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Kuliah Kerja Nyata 2024 </h4>
+                                    <h5 class="timeline__meta">Staff of Documentation</h5>
+                                    <p class="timeline__timeframe">Jul - Sep 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>KKN (Kuliah Kerja Nyata) is a community service program where university students
+                                        implement their knowledge to help develop local communities.</p>
+                                    <ul>
+                                        <li>Managed documentation by capturing photos/videos and creating daily
+                                            Instagram stories and timeline posts for KKN activities.</li>
+                                        <li>Grew Instagram followers to over 300 through consistent and engaging content
+                                            creation.</li>
+                                        <li>Developed social media strategy to effectively showcase KKN programs and
+                                            community impact.</li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -455,8 +412,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
@@ -483,14 +438,8 @@
                         </div>
                     </div>
                 </div>
-
-    </div> <!-- end about-timelines -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- ### works
-            ================================================== -->
+    </div>
+    </section>
     <section id="works" class="s-works target-section">
         <div class="row works-portfolio">
             <div class="column lg-12" data-animate-block>
@@ -512,10 +461,8 @@
                                     Integrated Laboratory Management Information System
                                 </div>
                                 <div class="folio-list__item-desc">
-                                    The Integrated Laboratory Management Information System is a further
-                                    development of SITARIS which is an improvement, addition and integration
-                                    with the Labor system which was developed using the PHP programming language
-                                    and the CodeIgniter 4 Framework.
+                                    An enhanced PHP-based lab management system built on CodeIgniter 4, evolving from
+                                    SITARIS.
                                 </div>
                             </div>
                         </a>
@@ -532,7 +479,6 @@
                             </svg>
                         </a>
                     </li>
-
                     <li class="folio-list__item column" data-animate-el>
                         <a class="folio-list__item-link" href="https://github.com/Daisy-Team/Daisy-Team"
                             target="_blank">
@@ -544,9 +490,7 @@
                                     Dermatological AI System for Your Skin (DAISY)
                                 </div>
                                 <div class="folio-list__item-desc">
-                                    Project DAISY is a project that focused on Indonesian citizen’s
-                                    dermatological problem. DAISY stands for Dermatological AI System for Your
-                                    Skin.
+                                    DAISY is an AI system addressing skin health issues in Indonesia.
                                 </div>
                             </div>
                         </a>
@@ -562,12 +506,10 @@
                             </svg>
                         </a>
                     </li>
-
                     <li class="folio-list__item column" data-animate-el>
                         <a class="folio-list__item-link"
                             href="https://w4kmd-my.sharepoint.com/:p:/g/personal/email_hafizaryan_my_id/ESQGChel7WpMn4RZfUcJDqoBE-n9M_z610WpI8LtT9vXvg?e=PHB89y"
                             target="_blank">
-
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
                                     Prototype
@@ -576,9 +518,8 @@
                                     Pet Paw Services
                                 </div>
                                 <div class="folio-list__item-desc">
-                                    Pet Paw is an app that makes it easy for pet owners to book petshop services online
-                                    Pet Paw helps facilitate by providing a platform that eases the interaction
-                                    between pet owners and petshop businesses, and promotes awareness of animal welfare.
+                                    Pet Paw is an online platform that simplifies petshop service booking and promotes
+                                    animal welfare awareness.
                                 </div>
                             </div>
                         </a>
@@ -598,7 +539,6 @@
                     </li>
                     <li class="folio-list__item column" data-animate-el>
                         <a class="folio-list__item-link" href="https://sitaris.lab-si.uin-suska.ac.id" target="_blank">
-
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
                                     Website
@@ -607,12 +547,7 @@
                                     Sistem Informasi Inventaris Laboratorium
                                 </div>
                                 <div class="folio-list__item-desc">
-                                    The Laboratory Inventory Information System is a platform that has been
-                                    developed using the PHP programming language and the CodeIgniter 4
-                                    Framework. This platform is specifically designed to help manage and monitor
-                                    inventory of goods and equipment in the laboratory. With the various main
-                                    features provided, this system has the potential to increase efficiency and
-                                    productivity in laboratory operations.
+                                    A PHP-based CodeIgniter 4 platform for efficient laboratory inventory management.
                                 </div>
                             </div>
                         </a>
@@ -631,7 +566,6 @@
                     </li>
                     <li class="folio-list__item column" data-animate-el>
                         <a class="folio-list__item-link" href="#" target="_blank">
-
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
                                     Model
@@ -640,12 +574,10 @@
                                     Klasifikasi Gambar
                                 </div>
                                 <div class="folio-list__item-desc">
-                                    Machine Learning model for image classification in Google Colab, using
-                                    Sequential Model with image augmentation. Trained in < 30 minutes, achieved train
-                                        accuracy of 93% and validation accuracy of 100%. The model can predict images,
-                                        with potential improvements through Dropout, Callback, and Transfer Learning.
-                                        </div>
+                                    An efficient image classification model built in Google Colab using Sequential Model
+                                    with 93% train and 100% validation accuracy.
                                 </div>
+                            </div>
                         </a>
                         <a href="https://github.com/hafizaryan/submission-dicoding-mlPemula" target="_blank">
                             <div class="folio-list__item-tech">View Github Documentation
@@ -662,10 +594,8 @@
                     </li>
                     <li class="folio-list__item column" data-animate-el>
                         <a class="folio-list__item-link" href="https://github.com/hafizaryan" target="_blank">
-
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-
                                 </div>
                                 <div class="folio-list__item-title">
                                     View More on Github
@@ -689,8 +619,8 @@
                     </li>
                 </ul>
             </div>
-        </div> <!-- end works-portfolio -->
-    </section> <!-- end s-works -->
+        </div>
+    </section>
     <section id="certificates" class="s-works target-section">
         <div class="row certificates">
             <div class="column lg-12" data-animate-block>
@@ -805,7 +735,7 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end s-certificates -->
+    </section>
     <section id="gallery" class="s-works target-section">
         <div class="row gallery">
             <div class="column lg-12" data-animate-block>
@@ -930,59 +860,47 @@
             </div>
         </div>
     </section>
-
-    <!-- ### contact
-            ================================================== -->
     <section id="contact" class="target-section">
-
         <div class="row contact-top">
             <div class="column lg-12" data-animate-block>
                 <h2 class="text-pretitle" data-animate-el>
                     Get In Touch
                 </h2>
-
                 <p class="h1" data-animate-el>
-                    I love to hear from you.
-                    Whether you have a question or just
-                    want to chat about web, tech & other — shoot me a message.
+                    Feel free to message me about web, tech, or anything else.
                 </p>
             </div>
-        </div> <!-- end contact-top -->
-
+        </div>
         <div class="row contact-bottom">
             <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
                 <h3 class="text-pretitle">Reach me at</h3>
                 <p class="contact-links">
-                    <a href="mailto:hafizaryansiregar@gmail.com" class="mailtoui">Email</a> <svg width="15" height="15"
-                        viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    <a href="mailto:hafizaryansiregar@gmail.com" class="mailtoui">Email</a>
+                    <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                     </svg> <br>
                 </p>
             </div>
             <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                <h3 class="text-pretitle">Social</h3>
+                <h3 class="text-pretitle">Social Media</h3>
                 <ul class="contact-social">
-                    <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">Linkedin</a></li>
+                    <!-- <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">Linkedin</a></li> -->
                     <li><a href="link.html" target="_blank">View More</a></li>
                 </ul>
             </div>
-            <div class="column lg-4 md-12 contact-block">
+            <!-- <div class="column lg-4 md-12 contact-block">
                 <a href="mailto:hafizaryansiregar@gmail.com"
                     class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
-            </div>
-        </div> <!-- end contact-bottom -->
-
-    </section> <!-- end contact -->
-
+            </div> -->
+        </div>
+    </section>
     </main>
     <footer class="s-footer">
-
         <div class="row">
             <div class="column ss-copyright">
                 <span>Hafiz Aryan Siregar</span>
-                <span>Last Updated: 26 Feb 2025</span>
+                <span>Updated on: Feb 26, 2025</span>
                 <span>
                     <div class="status-container">
                         <div class="status-indicator"></div>
@@ -1008,18 +926,18 @@
         document.addEventListener("DOMContentLoaded", function () {
             var swiper = new Swiper(".testimonial-slider", {
                 autoplay: {
-                    delay: 0, // Tidak ada delay sama sekali
+                    delay: 0,
                     disableOnInteraction: false,
                 },
-                speed: 4500, // Kecepatan lebih lambat untuk efek mengalir alami
-                slidesPerView: "auto", // Menyesuaikan jumlah slide yang terlihat
-                spaceBetween: 20, // Jarak antar gambar
-                freeMode: true, // Mode bebas agar scroll terasa alami
-                freeModeMomentum: false, // Menghindari berhenti mendadak
-                loop: true, // Tetap mengulang tanpa terasa ada gap
-                loopedSlides: 5, // Mencegah delay saat berpindah ke awal slide lagi
-                allowTouchMove: false, // Menghindari interaksi yang bisa menghentikan autoplay
-                cssMode: false, // Mencegah masalah rendering yang menyebabkan delay
+                speed: 4500,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                freeMode: true,
+                freeModeMomentum: false,
+                loop: true,
+                loopedSlides: 5,
+                allowTouchMove: false,
+                cssMode: false,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -1030,10 +948,10 @@
                 },
                 breakpoints: {
                     1024: {
-                        slidesPerView: 2, // Desktop menampilkan 2 gambar per slide
+                        slidesPerView: 2,
                     },
                     0: {
-                        slidesPerView: 1, // Mobile & Tablet menampilkan 1 gambar per slide
+                        slidesPerView: 1,
                     }
                 }
             });
