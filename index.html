@@ -68,46 +68,14 @@
                         </div>
                         <h1 class="text-huge-title">
                             I am Hafiz Aryan Siregar, <br>
-                            <span id="typing"></span>
+                            Tech <br> Enthusiast
                         </h1>
-                        <script>
-                            const roles = ["Tech Enthusiast", "Full Stack Developer", "Software Quality Assurance", "Cloud Engineer"];
-                            let roleIndex = 0;
-                            let charIndex = 0;
-                            const typingSpeed = 100; // Kecepatan mengetik (ms)
-                            const eraseSpeed = 5;   // Kecepatan menghapus (ms)
-                            const pauseBeforeErase = 2000; // Jeda sebelum menghapus (ms)
-                            const pauseBeforeType = 500;  // Jeda sebelum mengetik (ms)
-
-                            function typeWriter() {
-                                if (charIndex < roles[roleIndex].length) {
-                                    document.getElementById("typing").textContent += roles[roleIndex].charAt(charIndex);
-                                    charIndex++;
-                                    setTimeout(typeWriter, typingSpeed);
-                                } else {
-                                    setTimeout(eraseText, pauseBeforeErase);
-                                }
-                            }
-
-                            function eraseText() {
-                                if (charIndex > 0) {
-                                    document.getElementById("typing").textContent = roles[roleIndex].substring(0, charIndex - 1);
-                                    charIndex--;
-                                    setTimeout(eraseText, eraseSpeed);
-                                } else {
-                                    roleIndex = (roleIndex + 1) % roles.length;
-                                    setTimeout(typeWriter, pauseBeforeType);
-                                }
-                            }
-                            typeWriter();
-                        </script>
+                        <ul class="intro-social">
+                            <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/hafizaryan" target="_blank">Github</a></li>
+                            <li><a href="https://www.instagram.com/hafizaryan_/" target="_blank">Instagram</a></li>
+                        </ul>
                     </div>
-                    <ul class="intro-social">
-                        <li><a href="https://www.linkedin.com/in/hafizaryan/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/hafizaryan" target="_blank">Github</a></li>
-                        <li><a href="https://www.instagram.com/hafizaryan_/" target="_blank">Instagram</a></li>
-                    </ul>
-                </div>
             </section>
             <section id="about" class="s-about target-section" active>
                 <div class="row about-info wide" data-animate-block>
