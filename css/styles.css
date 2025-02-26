@@ -100,7 +100,7 @@
   --color-1-lighter: hsla(36, 72%, 90%, 1);
   --color-1-light: hsla(36, 72%, 80%, 1);
   --color-1-dark: hsla(36, 72%, 60%, 1);
-  --color-1-darker: hsla(36, 72%, 50%, 1);
+  --color-1-darker: #db9224;
   --color-2-lighter: hsla(168, 62%, 56%, 1);
   --color-2-light: hsla(168, 62%, 46%, 1);
   --color-2-dark: hsla(168, 62%, 26%, 1);
@@ -2425,6 +2425,55 @@ td:last-child {
   transition: all 0.5s;
 }
 
+.certificate-container {
+  position: relative;
+  overflow: hidden;
+  font-family: "Public Sans", sans-serif;
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  height: 245px;
+  transition: transform 0.4s ease;
+  border-radius: 2px;
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.71);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-text {
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.5s ease;
+  font-family: var(--font-1);
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+  line-height: var(--vspace-0_75);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.overlay-text:hover {
+  color: hsl(36 70% 70% / 1);
+}
+
+.certificate-container:hover .certificate-overlay {
+  opacity: 1;
+  color: white;
+}
+
 /* ------------------------------------------------------------------- 
  * ## skillbars 
  * ------------------------------------------------------------------- */
@@ -3768,7 +3817,7 @@ img.u-pull-left {
 
 .folio-list__item-tech {
   font-size: var(--text-sm);
-  color: var(--color-text-light);
+  color: white;
   line-height: var(--vspace-0_75);
   margin-left: 0.2rem;
   transition-duration: 0.5s;
